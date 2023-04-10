@@ -15,6 +15,19 @@
   </thead>
   <tbody>
     <!-- TODO - Render movies in a table with a link on the title to the individual movie page -->
+    {% for movie in movies %}
+    <tr>
+      <td>
+        {{movie.title}}
+      </td>
+      <td>
+        {{movie.director}}
+      </td>
+      <td>
+        {{movie.rating}}
+      </td>
+    </tr>
+    {% endfor %}
   </tbody>
 </table>
 {% endblock %}
